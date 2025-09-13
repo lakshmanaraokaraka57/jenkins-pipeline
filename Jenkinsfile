@@ -5,7 +5,7 @@ pipeline{
             steps{
                 script{
                     sh '''
-                    echo " Hello Lakshman"
+                    echo " Hello Lakshmana Rao"
                     echo " This is a Build Stage"
                     '''
                 }
@@ -15,7 +15,7 @@ pipeline{
             steps{
                 script{
                     sh '''
-                    echo " Hello Lakshman"
+                    echo " Hello Lakshmana Rao"
                     echo " This is a Test Stage"
                     '''
                 }
@@ -25,7 +25,7 @@ pipeline{
             steps{
                 script{
                     sh '''
-                    echo " Hello Lakshman"
+                    echo " Hello Lakshmana Rao"
                     echo " This is a Deployment Stage"
                     '''
                 }
