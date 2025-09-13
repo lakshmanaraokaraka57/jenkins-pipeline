@@ -34,9 +34,11 @@ pipeline{
     }
         post{
             success{
+                def timestamp = new Date()
                 echo " Deployment is Successfully completed"
             }
             failure{
+                def timestamp = new Date()
                 echo " Deployment is not Successfully completed "
             }
         }
