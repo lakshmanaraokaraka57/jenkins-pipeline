@@ -31,5 +31,10 @@ pipeline{
                 }
             }
         }
+        post{
+            always{
+                echo 'Hello Lasya your Deployment successfully complted'
+            }
+        }
     }
 }
