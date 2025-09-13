@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    enviornment{
+    environment{
         PROJECT='Lasya-InfoTech'
         component='Dev'
     }
