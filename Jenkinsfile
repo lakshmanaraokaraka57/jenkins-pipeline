@@ -32,14 +32,18 @@ pipeline{
             }
         }
     }
-        post{
-            success{
-                def timestamp = new Date()
-                echo " Deployment is Successfully completed at ${timestamp}"
-            }
-            failure{
-                def timestamp = new Date()
-                echo " Deployment is not Successfully completed at ${timestamp} "
+    post{
+        success{
+            script{
+                def timestamp= new Date()
+                echo "Deployment completed at ${timestamp}"
             }
         }
+        failure{
+            script{
+                def timestamp = new Date()
+                echo " Deployment is not completed at ${timestamp}"
+            }
+        }
+    }
 }
