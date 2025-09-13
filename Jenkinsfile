@@ -1,4 +1,5 @@
 pipeline{
+    agent any
     stages{
         stage('Build'){
             steps{
@@ -20,7 +21,7 @@ pipeline{
                 }
             }
         }
-        stage('Deployment')
+        stage('Deployment'){
         steps{
             scripts{
                 sh '''
@@ -28,6 +29,7 @@ pipeline{
                 echo " This is a Deployment Stage "
                 '''
             }
+        }
         }
     }
 }
