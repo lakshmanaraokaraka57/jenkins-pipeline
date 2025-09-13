@@ -32,8 +32,11 @@ pipeline{
             }
         }
         post{
-            always{
-                echo 'Hello Lasya your Deployment successfully complted'
+            success{
+                script{
+                    def timestamp = new Date()
+                    echo "Deployment completed at ${timestamp}"
+                }
             }
         }
     }
