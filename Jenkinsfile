@@ -22,14 +22,14 @@ pipeline{
             }
         }
         stage('Deployment'){
-        steps{
-            scripts{
-                sh '''
-                echo " Hello Lakshman"
-                echo " This is a Deployment Stage "
-                '''
+            steps{
+                script{
+                    sh '''
+                    echo " Hello Lakshman"
+                    echo " This is a Deployment Stage"
+                    '''
+                }
             }
-        }
         }
     }
 }
