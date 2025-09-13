@@ -31,6 +31,7 @@ pipeline{
                 }
             }
         }
+    }
         post{
             success{
                 echo " Deployment is Successfully completed"
@@ -39,5 +40,4 @@ pipeline{
                 echo " Deployment is not Successfully completed "
             }
         }
-    }
 }
