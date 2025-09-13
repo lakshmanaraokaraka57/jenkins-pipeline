@@ -36,13 +36,13 @@ pipeline{
         success{
             script{
                 def timestamp= new Date()
-                echo "Deployment completed at ${timestamp}"
+                echo 'Deployment completed at ${timestamp}'
             }
         }
         failure{
             script{
                 def timestamp = new Date()
-                echo " Deployment is not completed at ${timestamp}"
+                echo  'Deployment is not completed at ${timestamp}'
             }
         }
     }
