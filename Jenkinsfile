@@ -43,6 +43,7 @@ pipeline{
                 def timestamp= new Date()
                 echo 'Deployment completed at ${timestamp}'
             }
+            deleteDir()
         }
         failure{
             script{
