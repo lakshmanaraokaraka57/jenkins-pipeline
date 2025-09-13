@@ -1,5 +1,9 @@
 pipeline{
     agent any
+    enviornment{
+        PROJECT='Lasya-InfoTech'
+        component='Dev'
+    }
     stages{
         stage('Build'){
             steps{
@@ -7,6 +11,7 @@ pipeline{
                     sh '''
                     echo " Hello Lakshmana Rao"
                     echo " This is a Build Stage"
+                    echo "project:$PROJECT"
                     '''
                 }
             }
